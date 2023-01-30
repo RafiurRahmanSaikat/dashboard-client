@@ -33,10 +33,9 @@ const BillingDashboard = () => {
         let sum = DATA?.reduce((a, b) => a + parseInt(b.amount), 0)
         setTotalPaid(sum)
         console.log(sum)
-        setLoadTotal(!LoadTotal)
       });
 
-  }, [LoadTotal])
+  }, [data])
 
 
   const SEARCH = (event) => {
